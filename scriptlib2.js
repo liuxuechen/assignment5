@@ -47,7 +47,7 @@ $(document).ready(function(){
                     table2_items = [];
                         table2_items.push(value.fields.学校);
                         table2_items.push(value.fields.游玩选择);
-  
+
                         table2_dataSet.push(table2_items);
                         console.log(table2_items);
                  }); // end .each
@@ -71,6 +71,10 @@ $(document).ready(function(){
                           columns:table2_dataSet,
                           type : 'bar'
                       },
+                      axis: {
+                      x: {label: '学校'},
+                      y: {label: '游玩选择数量'}
+                    },
                       bar: {
                           title: "学校与游玩选择",
                       }
